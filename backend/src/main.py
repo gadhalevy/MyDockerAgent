@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 import os
 
-# API_KEY=os.getenv("APIKEY")
-# if not API_KEY:
-#     raise ValueError("APIKEY environment variable is not set.")
+API_KEY=os.getenv("APIKEY")
+if not API_KEY:
+    raise ValueError("API_KEY environment variable is not set.")
 
 app = FastAPI()
 
