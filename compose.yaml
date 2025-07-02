@@ -10,7 +10,7 @@ services:
     environment:
       - PORT=8000
     env_file:
-      - fileName=.env.sample
+      - ./backend/.env.sample
     volumes:
       - ./backend/src:/app
     develop:
